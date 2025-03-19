@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Style Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f1f3f6;
+        }
+
+        .signup-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .signup-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2874f0;
+        }
+
+        .form-control {
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+
+        .btn-signup {
+            background: #fb641b;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 6px;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .btn-signup:hover {
+            background: #e65100;
+            transform: scale(1.05);
+        }
+
+        .login-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #2874f0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        header {
+          background: #003366;
+          color: white;
+          padding: 15px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .logo {
+          display: flex;
+          align-items: center;
+      }
+      .logo img {
+          height: 60px;
+          margin-right: 10px;
+      }
+      .logo h1 {
+          margin: 0;
+          font-size: 24px;
+      }
+      nav ul {
+          list-style: none;
+          display: flex;
+      }
+      nav ul li {
+          margin: 0 15px;
+      }
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: 600;
+          transition: 0.3s;
+      }
+      nav ul li a:hover {
+          color: #ffcc00;
+      }
+      .store-title {
+        text-decoration: none; 
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .store-title:hover {
+        color: #ffcc00;
+    }
+    
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="/images/logo.png" alt="Fashion Store Logo">
+        <a href="/abhi.html" class="store-title">FASHION STORE</a>
+    </div>
+    <input type="text" class="search-bar" placeholder="Search for products...">
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/places.html">Our Places</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/signup.html">Signup</a></li>
+            <li><a href="/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="signup-container">
+        <h2 class="signup-title">Sign Up</h2>
+
+        <form>
+            <input type="text" class="form-control" placeholder="Full Name" required>
+            <input type="email" class="form-control" placeholder="Email Address" required>
+            <input type="tel" class="form-control" placeholder="Mobile Number" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <button type="submit" class="btn btn-signup">Continue</button>
+        </form>
+
+        <p class="login-link">Already have an account? <a href="/login.html">Login</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

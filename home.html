@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fb;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px;
+            font-size: 32px;
+            font-weight: 700;
+            color: #222;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #ff6b6b, #ff4757);
+            display: block;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        /* Product Card */
+        .product-card {
+            transition: all 0.4s ease-in-out;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Product Image */
+        .product-card img {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            height: 260px;
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Card Body */
+        .product-card .card-body {
+            padding: 20px;
+            background: linear-gradient(135deg, #f6f9fc 20%, #dbe5f1 100%);
+            text-align: center;
+        }
+
+        .product-card .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .product-card .text-success {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        /* Responsive Grid */
+        @media (max-width: 768px) {
+            .row-cols-md-4 .col {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .row-cols-md-4 .col {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        header {
+          background: #003366;
+          color: white;
+          padding: 15px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .logo {
+          display: flex;
+          align-items: center;
+      }
+      .logo img {
+          height: 60px;
+          margin-right: 10px;
+      }
+      .logo h1 {
+          margin: 0;
+          font-size: 24px;
+      }
+      nav ul {
+          list-style: none;
+          display: flex;
+      }
+      nav ul li {
+          margin: 0 15px;
+      }
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: 600;
+          transition: 0.3s;
+      }
+      nav ul li a:hover {
+          color: #ffcc00;
+      }
+      .store-title {
+        text-decoration: none; 
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .store-title:hover {
+        color: #ffcc00;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="/images/logo.png" alt="Fashion Store Logo">
+        <a href="/abhi.html" class="store-title">FASHION STORE</a>
+    </div>
+    <input type="text" class="search-bar" placeholder="Search for products...">
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/places.html">Our Places</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/signup.html">Signup</a></li>
+            <li><a href="/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="container mt-4">
+        <!-- Children's Collection -->
+        <h2 class="section-title text-primary">Children's Collection</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/kid1.jpeg" class="card-img-top" alt="Kids Outfit">
+                    <div class="card-body">
+                        <h5 class="card-title"> white elegant dress for girls kids </h5>
+                        <p class="text-success">$29.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card product-card">
+                  <img src="/images/kid2.jpg" class="card-img-top" alt="Kids Outfit">
+                  <div class="card-body">
+                      <h5 class="card-title">BABY GO Full Sleeves</h5>
+                      <p class="text-success">$29.99</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card product-card">
+                <img src="images/kid3.jpeg" class="card-img-top" alt="Kids Outfit">
+                <div class="card-body">
+                    <h5 class="card-title">Kids Outfit</h5>
+                    <p class="text-success">$29.99</p>
+                </div>
+            </div>
+        </div>
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/kid4.jpeg" class="card-img-top" alt="Kids Outfit">
+                    <div class="card-body">
+                        <h5 class="card-title">Casual Kids Wear</h5>
+                        <p class="text-success">$25.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Women's Collection -->
+        <h2 class="section-title text-danger">Women's Collection</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/women1.jpg" class="card-img-top" alt="Elegant Dress">
+                    <div class="card-body">
+                        <h5 class="card-title">Symbol Premium Women's Solid Sleeveless</h5>
+                        <p class="text-success">$49.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card product-card">
+                  <img src="images/wo.jpeg" class="card-img-top" alt="Elegant Dress">
+                  <div class="card-body">
+                      <h5 class="card-title">Lea Clothing Co. Women Solid Off-Shoulder Cotton Top</h5>
+                      <p class="text-success">$49.99</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card product-card">
+                <img src="images/women3.jpeg" class="card-img-top" alt="Elegant Dress">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Dress</h5>
+                    <p class="text-success">$49.99</p>
+                </div>
+            </div>
+        </div>
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/women4.jpeg" class="card-img-top" alt="Stylish Outfit">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Outfit</h5>
+                        <p class="text-success">$59.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Men's Collection -->
+        <h2 class="section-title text-info">Men's Collection</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/men1.jpg" class="card-img-top" alt="Casual Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Casual Shirt</h5>
+                        <p class="text-success">$39.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card product-card">
+                  <img src="images/men2.jpeg" class="card-img-top" alt="Casual Shirt">
+                  <div class="card-body">
+                      <h5 class="card-title">Casual Shirt</h5>
+                      <p class="text-success">$39.99</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card product-card">
+                <img src="images/men3.jpg" class="card-img-top" alt="Casual Shirt">
+                <div class="card-body">
+                    <h5 class="card-title">Casual Shirt</h5>
+                    <p class="text-success">$39.99</p>
+                </div>
+            </div>
+        </div>
+        
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/men4.jpeg" class="card-img-top" alt="Formal Wear">
+                    <div class="card-body">
+                        <h5 class="card-title">Formal Wear</h5>
+                        <p class="text-success">$55.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
