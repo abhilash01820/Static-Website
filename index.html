@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0"; url="abhi.html">
+    <meta http-equiv="refresh" content="0; url=abhi.html">
+    <script>
+        // JavaScript fallback in case meta refresh fails
+        setTimeout(function () {
+            window.location.href = "abhi.html";
+        }, 0);
+    </script>
 </head>
 <body>
+    <noscript>
+        <!-- If JavaScript is disabled, provide a manual link -->
+        <p>If you are not redirected, <a href="abhi.html">click here</a>.</p>
+    </noscript>
 </body>
 </html>
